@@ -72,11 +72,26 @@ signUpButton.addEventListener('click', (e) => {
 
 loginButton.addEventListener('click', (e) => {
     
+    e.preventDefault()
     //get values from login form
+    const logInEmail = document.querySelector('.loginEmail').value
+    const logInPassword = document.querySelector('.loginPassword').value    
 
     //get data from local storage
+    const formData = JSON.parse(localStorage.getItem('formData')) ||[];      
 
     //check if data in local storage is same as value inputted
+    let exist = JSON.parse(localStorage.getItem('formData')).find((data)=> data.email == logInEmail && data.password == logInPassword)    
+
+    if(exist){
+    alert("you have logged in successfully")
+    window.location.href = "blogr.html"
+    }
+    else{
+    alert("username or password is wrong")
+    document.querySelector(".myLogin").reset()
+    document.querySelector(".loginEmail").focus()
+    }
 
     //FOCUS TYPING INPUT ON EMAIL AFTER FORM HAS BEEN SUBMITTED
     
