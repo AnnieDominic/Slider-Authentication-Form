@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header {
+    background:url(./images/bg-pattern-intro-desktop.svg), hsl(13, 100%, 72%);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 30rem;
+    width: 100%; 
+    
+}
+
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 20rem;
+    margin: 3rem auto auto auto;
+    gap: 4rem;
+}
+
+#itemone {
+    display: flex;
+    justify-content: space-between;
+}
+#itemone ul{
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+#itemone li{
+    display: inline;
+}
+
+#logocontainer{
+    display: flex;
+    gap: 2rem;
+    width: 60%;
+    background-color: inherit;
+}
+
+#btncontainer{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 20%;
+}
+
+button{
+    height: 2rem;
+    width:40%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.leftbtn{
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightbtn{
+    color:  hsl(13, 100%, 72%);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#itemtwo{
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#itemthree {
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    height: 4rem;
+}
+
+#itemthree .otherbtn {
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(1, 1, 26);
+}
+h3{
+    color: rgb(1, 1, 26);
+    margin-top: 4rem;
+    
+    
+}
+.headone{
+    margin-bottom: 1.5%;
+}
+.headtwo{
+    margin-bottom: 1.5%;
+}
+#editorcontainer{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    float: right;
+    height: 100%;
+    
+}
+.desktop{
+    margin-top: -5em;
+    width: 70% ;
+
+}
+.free{
+    color: rgb(1, 1, 26);
+    margin-bottom: 1.5%;
+}
+.tooling{
+    color: rgb(1, 1, 27);
+    margin-bottom: 1.5%;
+}
+.desktop{
+    display: flex;
+    flex-direction: row;
+    
+}
+.head{
+    margin-bottom: 1.5%;
+    margin-top: 0.5%;
+}
+.paragraph{
+    margin-left: 100px;
+}
+
+
+
+
+
+
